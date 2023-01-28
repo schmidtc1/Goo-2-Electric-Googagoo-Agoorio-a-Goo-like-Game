@@ -1,0 +1,4 @@
+repository "Goo 2@Goorganization@cloud"
+  path "/"
+    br "/main"
+    co "/main"
