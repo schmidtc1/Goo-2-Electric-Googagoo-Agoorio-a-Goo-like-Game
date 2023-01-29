@@ -160,7 +160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 90.72131, y: 38.84189}
+  m_AnchoredPosition: {x: 164, y: 38.84189}
   m_SizeDelta: {x: 254.4866, y: 83.7392}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &131053870
@@ -286,11 +286,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2262956206549419749, guid: 3a7606a341924b443877bbeebc0b8fbf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -436
+      value: -542
       objectReference: {fileID: 0}
     - target: {fileID: 2262956206549419749, guid: 3a7606a341924b443877bbeebc0b8fbf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 201
+      value: 209
       objectReference: {fileID: 0}
     - target: {fileID: 2262956206549419749, guid: 3a7606a341924b443877bbeebc0b8fbf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -528,8 +528,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000030517578}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 78.85, y: 0}
+  m_SizeDelta: {x: 157.7, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &939605161
 MonoBehaviour:
@@ -757,7 +757,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.9023666
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -911,7 +911,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580119771}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.77, y: -3.52, z: 0}
+  m_LocalPosition: {x: -0.62, y: -3.31, z: 0}
   m_LocalScale: {x: 1.9941629, y: 1.6132525, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1131,7 +1131,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -269.2788, y: 38.841854}
+  m_AnchoredPosition: {x: -344, y: 38.841854}
   m_SizeDelta: {x: 254.4866, y: 83.7392}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2132719145
@@ -1178,13 +1178,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1578098906}
+        m_TargetAssemblyTypeName: EndMenu, Assembly-CSharp
+        m_MethodName: ExitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

@@ -18,7 +18,7 @@ public class Meteor : MonoBehaviour
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
         rb = GetComponent<Rigidbody2D>();
         direction = new Vector2(Random.Range(-3, 3), 2.8f);
-        speed = 0.006f;
+        speed = 0.1f;
         timer = 0.0f;
         despawn = 7.0f;
     }
@@ -31,7 +31,7 @@ public class Meteor : MonoBehaviour
             transform.Translate(direction * speed, Space.World);
         }
         else if (!manager.gameOver && Input.GetKey(KeyCode.Space)) {
-            transform.position = Vector3.MoveTowards(transform.position, goo.transform.position, 0.02f);
+            transform.position = Vector3.MoveTowards(transform.position, goo.transform.position, 0.2f);
         }
         if (timer >= despawn) {
             Destroy(gameObject);

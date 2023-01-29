@@ -18,7 +18,7 @@ public class Blob : MonoBehaviour
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
         rb = GetComponent<Rigidbody2D>();
         direction = new Vector2(Random.Range(-3, 3), 2.5f);
-        speed = 0.005f;
+        speed = 0.05f;
         timer = 0.0f;
         despawn = 10.0f;
     }
@@ -31,7 +31,7 @@ public class Blob : MonoBehaviour
             transform.Translate(direction * speed, Space.World);
         }
         else if (!manager.gameOver && Input.GetKey(KeyCode.Space)) {
-            transform.position = Vector3.MoveTowards(transform.position, goo.transform.position, 0.01f);
+            transform.position = Vector3.MoveTowards(transform.position, goo.transform.position, 0.1f);
         }
 
         if (timer >= despawn) {

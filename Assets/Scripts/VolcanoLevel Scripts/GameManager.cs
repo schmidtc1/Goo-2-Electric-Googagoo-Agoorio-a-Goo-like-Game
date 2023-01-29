@@ -54,6 +54,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void EndGame() {
+        GetTotalScores.spellScore += score;
         SceneManager.LoadScene("EndVolcanoLevel");
     }
 }
