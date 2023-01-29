@@ -18,7 +18,7 @@ public class Blob : MonoBehaviour
         manager = GameObject.Find("GameManager").GetComponent<GameManager>();
         rb = GetComponent<Rigidbody2D>();
         direction = new Vector2(Random.Range(-3, 3), 2.5f);
-        speed = 0.003f;
+        speed = 0.005f;
         timer = 0.0f;
         despawn = 10.0f;
     }

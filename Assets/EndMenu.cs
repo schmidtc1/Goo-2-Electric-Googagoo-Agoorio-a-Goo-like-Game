@@ -8,4 +8,7 @@ public class EndMenu : MonoBehaviour
     public void RetryGame() {
         SceneManager.LoadScene("VolcanoLevel");
     }
+    public void ExitGame() {
+        SceneManager.LoadScene("Lobby");
+    }
 }

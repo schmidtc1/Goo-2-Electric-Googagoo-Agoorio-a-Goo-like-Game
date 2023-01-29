@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
 {
     public GameObject meteor;
     public GameObject blob;
-    public Camera cam;
     public int max;
     public int counter;
     public bool gameOver;
@@ -20,7 +19,6 @@ public class GameManager : MonoBehaviour
     {
         meteor = (GameObject) Resources.Load("Meteor", typeof(GameObject));
         blob = (GameObject) Resources.Load("Blob", typeof(GameObject));
-        cam = Camera.main;
         gameOver = false;
         max = 30;
         counter = 0;
@@ -37,7 +35,7 @@ public class GameManager : MonoBehaviour
         if (!gameOver) {
             timer += Time.deltaTime;
             if (timer >= spawnTime && !Input.GetKey(KeyCode.Space)) {
-                if (counter < max && !gameOver) {
+                if (counter < max) {
                     int x = Random.Range(0, 12);
                     int y = 13;
                     Instantiate(meteor, new Vector3(x, y, 0), Quaternion.identity);
